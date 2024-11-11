@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mainButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">200dp</item>
+
+
+        <item name="android:backgroundTint">#f6f5f8</item>
+    </style>
+
+    <style name="mainButtonText">
+        <item name="android:fontFamily">@font/fredoka_one</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
