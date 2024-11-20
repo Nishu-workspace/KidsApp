@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow Layer for Elevation -->
+<!--    <item android:right="4dp" android:bottom="4dp">-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <solid android:color="#d3d3d3" /> &lt;!&ndash; Shadow color, can adjust to suit your theme &ndash;&gt;-->
+<!--            <corners android:radius="16dp" />-->
+<!--        </shape>-->
+<!--    </item>-->
+
+    <!-- Button Background Layer -->
+    <item>
+        <shape android:shape="rectangle">
+         <!-- Background color, adjust to desired color -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>
