@@ -2,6 +2,7 @@ package com.example.assignment2
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -11,9 +12,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.card.MaterialCardView
 import kotlin.random.Random
 
 class SubstractionGame : AppCompatActivity() {
+    lateinit var buttonBack : MaterialButton
     lateinit var textScore : TextView
     lateinit var textLife : TextView
     lateinit var textTimer : TextView
@@ -21,11 +24,11 @@ class SubstractionGame : AppCompatActivity() {
     lateinit var buttonOk : Button
     lateinit var buttonNext : Button
     lateinit var textQuestion : TextView
-    lateinit var buttonBack : MaterialButton
-    var correctAnswer = 0 // To store the correct Answer
-    var userScore = 0  // To Store the user's score for session
-    var totalLife = 3 // Total Life of user.
-
+    lateinit var gameOverCard: MaterialCardView
+    lateinit var buttonGameOver : Button
+    var correctAnswer = 0
+    var userScore = 0
+    var totalLife = 3
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -35,20 +38,24 @@ class SubstractionGame : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        gameOverCard = findViewById(R.id.gameOverCard)
+        gameOverCard.setVisibility(View.GONE)
+        buttonGameOver = findViewById(R.id.buttonGameOver)
+
+        buttonBack = findViewById(R.id.buttonBack)
         textScore = findViewById(R.id.textViewScoreCount)
         textLife = findViewById(R.id.textViewLiveCount)
-        textTimer = findViewById(R.id.textViewTimeCount)
+
         buttonOk = findViewById(R.id.buttonOk)
         buttonNext = findViewById(R.id.buttonNext)
-        buttonBack = findViewById(R.id.buttonBack)
         editTextAnswer = findViewById(R.id.editTextAnswer)
         textQuestion = findViewById(R.id.textViewQuestion)
         gameContinue()
+
         buttonBack.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
         buttonOk.setOnClickListener{
 
             val userInput = editTextAnswer.text.toString()
@@ -66,6 +73,13 @@ class SubstractionGame : AppCompatActivity() {
                     Toast.makeText(applicationContext, "Wrong Answer!!", Toast.LENGTH_LONG).show()
                     totalLife--
                     textLife.text = "$totalLife"
+                    if(totalLife == 0){
+                        gameOverCard.setVisibility(View.VISIBLE)
+                        buttonGameOver.setOnClickListener{
+                            val intent = Intent(this,MainActivity::class.java)
+                            startActivity(intent)
+                        }
+                    }
                 }
             }
         }
@@ -77,16 +91,19 @@ class SubstractionGame : AppCompatActivity() {
     }
     fun gameContinue(){
         val number1 = Random.nextInt(0,100)
-        val number2 = Random.nextInt(0,100)
-        if(number1>number2){
+        var number2 = Random.nextInt(0,100)
+        while(number1 == number2){
+            number2 = Random.nextInt(0,100)
+        }
+
+
+        if (number1> number2) {
             textQuestion.text = "$number1 - $number2 = ?"
             correctAnswer = number1 - number2
         }
         else{
             textQuestion.text = "$number2 - $number1 = ?"
             correctAnswer = number2 - number1
-
         }
-
     }
 }

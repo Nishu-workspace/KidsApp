@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="mainButton">
+    <style name="mainButton" parent="Widget.Material3.CardView.Elevated">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">200dp</item>
+<!--        <item name="cardElevation">1dp</item>-->
+        <item name="strokeWidth">0dp</item>
+       <item name="cardElevation">0dp</item>
 
 
-        <item name="android:backgroundTint">#f6f5f8</item>
     </style>
+    <style name="operatorButton" parent="Widget.Material3.CardView.Elevated">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">150dp</item>
+        <!--        <item name="cardElevation">1dp</item>-->
+        <item name="strokeWidth">0dp</item>
+        <item name="cardElevation">0dp</item>
 
+
+    </style>
     <style name="mainButtonText">
         <item name="android:fontFamily">@font/fredoka_one</item>
         <item name="android:textSize">20sp</item>

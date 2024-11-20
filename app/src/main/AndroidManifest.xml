@@ -13,6 +13,17 @@
         android:theme="@style/Theme.Assignment2"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".divisionGame"
+            android:exported="false" />
+        <activity
+            android:name=".multiplyGame"
+            android:exported="false" />
+
+        <activity
             android:name=".DrawCanvas"
             android:exported="false" />
         <activity
@@ -28,7 +39,7 @@
             android:name=".Operators"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

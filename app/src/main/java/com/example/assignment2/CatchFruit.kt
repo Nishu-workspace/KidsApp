@@ -17,17 +17,7 @@ import kotlin.random.Random
 
 class CatchFruit : AppCompatActivity() {
     lateinit var binding: ActivityCatchFruitBinding
-    lateinit var tvScore: TextView
-    lateinit var tvTime: TextView
-    lateinit var fruit1: ImageView
-    lateinit var fruit2: ImageView
-    lateinit var fruit3: ImageView
-    lateinit var fruit4: ImageView
-    lateinit var fruit5: ImageView
-    lateinit var fruit6: ImageView
-    lateinit var fruit7: ImageView
-    lateinit var fruit8: ImageView
-    lateinit var fruit9: ImageView
+
 
     var score = 0
     val imageArray = ArrayList<ImageView>()
@@ -39,12 +29,13 @@ class CatchFruit : AppCompatActivity() {
         binding = DataBindingUtil.setContentView<ActivityCatchFruitBinding>(this,R.layout.activity_catch_fruit)
         binding.catchFruits = this
         binding.score =  getString(R.string.score_0)
+
         score = 0
         imageArray.addAll(
             listOf(
-                binding.fruit1,binding.fruit2,binding.fruit3,
-                binding.fruit4,binding.fruit5,binding.fruit6,
-                binding.fruit7,binding.fruit8,binding.fruit9,
+                binding.fruit1,binding.fruit2,
+                binding.fruit4,binding.fruit5,binding.fruit6
+
 
             )
         )
@@ -63,7 +54,7 @@ class CatchFruit : AppCompatActivity() {
     fun hideImages(){
         runnable = Runnable{
             imageArray.forEach{ it.visibility = View.INVISIBLE}
-            imageArray[Random.nextInt(9)].visibility = View.VISIBLE
+            imageArray[Random.nextInt(5)].visibility = View.VISIBLE
             handler.postDelayed(runnable, 1000)
         }
         handler.post(runnable) }

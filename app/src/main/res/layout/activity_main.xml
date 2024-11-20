@@ -9,9 +9,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/operators"
-
-
         style="@style/mainButton"
+
         android:layout_marginStart="16dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="8dp"
@@ -29,21 +28,22 @@
 
             <TextView
                 android:id="@+id/textView"
+                style="@style/mainButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="Operators"
+                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/mainButtonText" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+
                 android:id="@+id/imageView"
                 android:layout_width="0dp"
-                android:layout_height="125dp"
+                android:layout_height="150dp"
                 android:background="@drawable/logo1"
-                android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="w,1:1"
                 app:layout_constraintEnd_toEndOf="parent" />
@@ -67,18 +67,22 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+                style="@style/mainButtonText"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+
                 android:layout_marginTop="16dp"
-                android:text="Tap Tap"
-                android:textSize="16sp"
+                android:text="Fruit Find"
+                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <ImageView
+
                 android:id="@+id/imageView1"
                 android:layout_width="0dp"
-                android:layout_height="125dp"
+                android:layout_height="150dp"
                 android:background="@drawable/logo2"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -90,11 +94,11 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/drawButton"
         style="@style/mainButton"
+        android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="400dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/materialCardView"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -104,50 +108,38 @@
             android:layout_height="match_parent">
 
             <TextView
+                style="@style/mainButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Hello"
+                android:text="Playground"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView14"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView"
-        style="@style/mainButton"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/drawButton"
-        app:layout_constraintTop_toTopOf="@+id/drawButton">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Hello"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/drawinglogo" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/textView3"
+        style="@style/mainButtonText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
         android:layout_marginTop="22dp"
         android:text="Kids Play"
-        android:textStyle="bold"
-
+        android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

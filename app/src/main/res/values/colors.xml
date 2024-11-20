@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="neutral1">#e4e4e6</color>
     <color name="neutral2">#868686</color>
+    <color name="mainWhite">#F6F6F6</color>
+    <color name="darkWhite">#ada9b8</color>
+    <color name="mainBlack">#1c1c1c</color>
+    <color name="buttonPurple">#7a4fed</color>
 </resources>

@@ -45,7 +45,7 @@ class AdditionGame : AppCompatActivity() {
         buttonBack = findViewById(R.id.buttonBack)
         textScore = findViewById(R.id.textViewScoreCount)
         textLife = findViewById(R.id.textViewLiveCount)
-        textTimer = findViewById(R.id.textViewTimeCount)
+
         buttonOk = findViewById(R.id.buttonOk)
         buttonNext = findViewById(R.id.buttonNext)
         editTextAnswer = findViewById(R.id.editTextAnswer)
