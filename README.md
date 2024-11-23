@@ -22,10 +22,31 @@ Before we begin try to learn about these topics : Intents, XML, Acitivites, Data
 > [!NOTE]
 > Checkout [Drawing Canvas](https://github.com/Miihir79/DrawingCanvas-Library) Library which we have used for creating Playground feature.
 
+
 ### Ui
 For Ui design i have used MaterialDesign guidelines for margins, padding and etc with custom touch for button styling. 
 
-https://github.com/Nishu-workspace/KidsApp/blob/7c2ae0722360f3ce795fb7c408a2ce2f90f56020/app/src/main/res/values/styles.xml
+Button Style(Material Card View) | Text Style
+:-: | :-:
+https://github.com/Nishu-workspace/KidsApp/blob/5e68901aad2729ea4f12288824a0f010769d84a2/app/src/main/res/values/styles.xml#L4-L21 | https://github.com/Nishu-workspace/KidsApp/blob/5e68901aad2729ea4f12288824a0f010769d84a2/app/src/main/res/values/styles.xml#L22-L26
+
+That's it, you don't need to change any thing more.
+> [!TIP]
+> Font used for project are [Fredoka](https://fonts.google.com/specimen/Fredoka).
+> </br> if you want to use any other font, i highly suggest you to use google fonts.(for copyright reasons)
+
+XML File list :
+- [activity_main.xml](app/src/main/res/layout/activity_main.xml) : Home Screen
+- [activity_operators.xml](app/src/main/res/layout/activity_operators.xml) : Operators/ Match Quiz
+   - [activity_addition_game.xml](app/src/main/res/layout/activity_addition_game.xml) : Addition Game
+   - [activity_substraction_game.xml](app/src/main/res/layout/activity_substraction_game.xml) : Substraction Game
+   - [activity_division_game.xml](app/src/main/res/layout/activity_division_game.xml) : Division Game
+   - [activity_multiply_game.xml](app/src/main/res/layout/activity_multiply_game.xml) : Multiply Game
+- [activity_catch_fruit.xml](app/src/main/res/layout/activity_catch_fruit.xml) : Find Fruit Game
+- [activity_draw_canvas.xml](app/src/main/res/layout/activity_draw_canvas.xml) : Drawing Canvas 
+
+
+
 
 
 
