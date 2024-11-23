@@ -12,4 +12,4 @@
 ## Quick Demo 
 **Math Quiz**
 
-<video src='https://github.com/Nishu-workspace/KidsApp/blob/master/WhatsApp%20Video%202024-11-23%20at%2010.05.22_420e747c.mp4' width=180/>
+<video src='https://github.com/Nishu-workspace/KidsApp/blob/master/WhatsApp%20Video%202024-11-23%20at%2010.05.22_420e747c.mp4' />
