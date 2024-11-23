@@ -11,5 +11,15 @@
 
 ## Quick  
 
+<video src ="https://github.com/user-attachments/assets/39aac2e9-ff68-4a50-b592-0c44d8dd974f"/>
+
+<video src ="https://github.com/user-attachments/assets/df0728a7-5834-4f37-8fea-a1fcb30ddf56"/>
+
 <video src="https://github.com/user-attachments/assets/f16e998e-79cf-4b16-9575-2c65d3d8fb70"/>
+
+
+
+
+
+
 
