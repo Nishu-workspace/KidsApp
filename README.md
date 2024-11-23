@@ -28,7 +28,7 @@ For Ui design i have used MaterialDesign guidelines for margins, padding and etc
 
 Button Style(Material Card View) | Text Style
 :-: | :-:
-https://github.com/Nishu-workspace/KidsApp/blob/5e68901aad2729ea4f12288824a0f010769d84a2/app/src/main/res/values/styles.xml#L4-L21 | https://github.com/Nishu-workspace/KidsApp/blob/5e68901aad2729ea4f12288824a0f010769d84a2/app/src/main/res/values/styles.xml#L22-L26
+https://github.com/Nishu-workspace/KidsPlayground/blob/5e68901aad2729ea4f12288824a0f010769d84a2/app/src/main/res/values/styles.xml#L4-L21 | https://github.com/Nishu-workspace/KidsPlayground/blob/5e68901aad2729ea4f12288824a0f010769d84a2/app/src/main/res/values/styles.xml#L22-L26
 
 That's it, you don't need to change any thing more.
 > [!TIP]
